@@ -1,0 +1,20 @@
+License
+
+This dataset is a composite work containing both original data I
+received and my own contributions.
+
+Original data files in the raw-data/ directory were received from BC
+Government agencies, and are licensed under the Open Government
+Licence - British Columbia. Attribution requirements and other terms
+from that license apply to those parts. See LICENSE-OGL-BC.
+
+Additional contributions were made by myself, Carolyn Susannah Tysor,
+including cleaning, formatting, and new organization and
+documentation. To the extent that copyright applies to my
+contributions to the derived data files in the data/ directory, those
+contributions are licensed under the Creative Commons CC0 license, see
+LICENSE-CC0.
+
+The R source code in in scripts used to perform the cleaning,
+formatting and organization is licensed under the MIT license, see
+LICENSE-MIT.

@@ -1,0 +1,86 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# picolaDataFlowering
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/scisus/picolaDataFlowering/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/scisus/picolaDataFlowering/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
+The goal of `picolaDataFlowering` is to provide a lodgepole pine flowering phenology dataset in an accessible format.
+This package contains 16 years of interior lodgepole pine (*Pinus contorta* ssp. *latifolia*) phenology data for pollen shed and cone receptivity.
+
+The data were collected in seed orchards in British Columbia between 1997 and 2012. Orchard trees are clones and offspring of parents sourced from across the province. Seed orchards measured pollen shed, cone receptivity, date cones were picked, and the weight of the cones. Not all orchards measured all variables in all years. Only pollen shed and cone receptivity are surfaced in the package, but date of cone harvest and weight are available in the raw data.
+
+## Installation
+
+You can install the development version of `picolaDataFlowering` from [GitHub](https://github.com/) with:
+
+```{r, message = FALSE}
+# install.packages("devtools")
+devtools::install_github("scisus/picolaDataFlowering")
+```
+## Example
+
+Read in phenology data sets from the package.
+
+```{r example}
+## basic example code
+
+state <- picolaDataFlowering::picola_state
+head(state)
+
+event <- picolaDataFlowering::picola_event
+head(event)
+```
+
+Lodgepole pine in BC generally flowers in May and June.
+
+```{r day_of_year_plot, echo = FALSE, warning = FALSE, message = FALSE}
+library(ggplot2)
+library(dplyr)
+library(forcats)
+
+flowering <- state %>%
+    filter(State == 2) %>%
+    mutate(Year = as.factor(Year)) %>%
+    left_join(picolaDataFlowering::picola_site_coord_elev, by = "Site") # get latitude
+# Reorder the 'Site' factor levels by latitude
+flowering$Site <- forcats::fct_reorder(flowering$Site, flowering$lat) 
+
+ggplot(flowering, aes(x=Site, y=DoY, group=interaction(Site, Year), colour = Site)) +
+    geom_line(alpha=0.5, size=3) +
+    #geom_point(alpha=0.1) +
+    scale_colour_brewer(type="qual", palette = "Dark2") +
+    facet_wrap("Sex") +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+    geom_hline(yintercept = 122, color = "darkgrey", linetype = 2) +  # Dark grey vertical line at May 1
+    geom_hline(yintercept = 153, color = "darkgrey", linetype = 2) +  # Dark grey vertical line at June 1
+    ylab("Day of Year") +
+    ggtitle("Day of year trees observed flowering at 7 sites 1997-2012", subtitle = "Sites ordered by latitude")
+
+```
+
+Data is from `r length(unique(state$Genotype))` genotypes grown at 
+`r length(unique(state$Site))` BC seed orchard sites and observed between `r min(state$Year, na.rm=TRUE)` 
+and `r max(state$Year, na.rm=TRUE)`.
+
+Data sets provided with this package include:
+
+- `picola_event` and `picola_state`: two versions of the flowering phenology data. `picola_event` is formatted for the model in [picolaModel](https://github.com/scisus/picolaModel) and contains only the observations necessary for the model. `picola_state` contains all observations and original phenology coding.
+- `picola_parent_locs`: provenance information for genotypes grown in the orchards
+- `picola_site_coord_elev`: locations and elevations of seed orchard sites and two northern sites used for comparison in [picolaModel](https://github.com/scisus/picolaModel) analysis
+- `picola_SPUs`: lodgepole pine SPUs and their representation in this phenology dataset

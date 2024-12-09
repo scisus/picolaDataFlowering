@@ -1,0 +1,38 @@
+Type,Sex,Phenophase,Description,Common Description
+1,FEMALE,0,No females,No female flowers
+1,MALE,0,No males,No male flowers
+1,FEMALE,3,Pre-Receptive Stage: When 20% of a ramet's flowers are at Stage 3,Pre-Receptive Stage: When 20% of a ramet's flowers are at Stage 4
+1,FEMALE,4,Receptive Stage: When 20% of a ramet's flowers are at pollination stage (lasts 3-4 days),"Receptive stage: 20% of a ramet's flowers are at receptive stage (stages 5 or 6, lasts 3-4 days)"
+1,MALE,4,Pollen flies when cluster tapped with hand on South side of tree,Pollen flies when cluster tapped with hand on south side of tree
+1,FEMALE,-,Past Stage 4 receptivity. When 80% of a ramet's flowers are past receptivity,
+1,FEMALE,-,Prior to stage 3 rating: tree not receptive,
+1,MALE,-,Pollen flight finished when cluster-tapping on NORTH side does not produce pollen,Pollen flight finished when cluster-tapping on north side does not produce pollen
+1,MALE,-,"Pollen NOT flying, i.e. not yet developed",Pollen not ready. Not flying
+1,MALE,4/5,small amount of pollen left when shaken,small amount of pollen left when shaken
+2,FEMALE,0,No females,No female flowers
+2,MALE,0,No males,No male flowers
+2,FEMALE,4,Receptive stage: 20% of a ramet's flowers are at receptive stage (stages 5 or 6),"Receptive stage: 20% of a ramet's flowers are at receptive stage (stages 5 or 6, lasts 3-4 days)"
+2,MALE,4,Pollen flies when cluster tapped with hand on SOUTH side of tree,Pollen flies when cluster tapped with hand on south side of tree
+2,FEMALE,-,After stage 5 & 6 receptivity: 80% of a ramet's flowers are past receptivity (stages 7 or 8),
+2,FEMALE,-,Prior to 4 rating: tree not receptive,
+2,MALE,-,Pollen flight finished when cluster-tapping on NORTH side does not produce pollen,Pollen flight finished when cluster-tapping on north side does not produce pollen
+2,MALE,-,"Pollen NOT flying, i.e. not yet developed",Pollen not ready. Not flying
+3,FEMALE,0,No females,No female flowers
+3,MALE,0,No males,No male flowers
+3,FEMALE,3,Pre-Receptive Stage: When 20% of a ramet's flowers are at Stage 3,Pre-Receptive Stage: When 20% of a ramet's flowers are at Stage 3
+3,FEMALE,4,Receptive Stage: When 20% of a ramet's flowers are at pollination stage (lasts 3-4 days),"Receptive stage: 20% of a ramet's flowers are at receptive stage (stages 5 or 6, lasts 3-4 days)"
+3,MALE,4,Pollen flies when cluster tapped with hand on SOUTH side of tree,Pollen flies when cluster tapped with hand on south side of tree
+3,FEMALE,-,Past Stage 4 receptivity. When 80% of a ramet's flowers are past receptivity,
+3,FEMALE,-,Prior to Stage 3 rating: tree not receptive,
+3,MALE,-,Pollen flight finished when cluster-tapping on North side does not produce pollen,Pollen flight finished when cluster-tapping on north side does not produce pollen
+3,MALE,-,"Pollen NOT flying, i.e. not yet developed",Pollen not ready. Not flying
+4,FEMALE,0,No female flowers,No female flowers
+4,MALE,0,No male flowers,No male flowers
+4,FEMALE,4,Receptive stage 20% of a ramet's flowers are at a receptive stage,"Receptive stage: 20% of a ramet's flowers are at receptive stage (stages 5 or 6, lasts 3-4 days)"
+4,MALE,4,Pollen flies when cluster tapped with hand on South side of ramet,Pollen flies when cluster tapped with hand on south side of tree
+4,FEMALE,-,Ramet not receptive or 80% of a ramet's flowers are past receptivity,
+4,MALE,-,Pollen not flying or no pollen flying when tapping cluster on North side,Pollen flight finished when cluster-tapping on north side does not produce pollen
+4,FEMALE,X,Receptive stage (4 in survey) summarized by clone For each clone an 'X' will be printed from the survey date in which 40% or more of the ramets are receptive (stage 4) to the date when 80% are past productivity,Receptive stage (4 in survey) summarized by clone For each clone an 'X' will be printed from the survey date in which 40% or more of the ramets are receptive (stage 4) to the date when 80% are past productivity
+4,MALE,X,Pollen flying (4 in survey) summarized by clone For each clone an 'X' will be printed from the survey date in which 40% or more of the ramets reach stage 4 to the date when 80% are past pollen flight from north cluster,40% or more of the ramets are at stage 4 to the date when 80% are past pollen flight from north cluster
+4,FEMALE,left blank,Ramet not receptive or 80% of a ramet's flowers are past receptivity,
+4,MALE,left blank,Pollen not flying or no pollen flying when tapping cluster on North side,Pollen flight finished when cluster-tapping on north side does not produce pollen
