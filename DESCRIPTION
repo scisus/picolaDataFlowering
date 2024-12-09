@@ -1,0 +1,13 @@
+Package: picolaDataFlowering
+Title: Phenology of Lodgepole Pine Pollen Shed and Cone Receptivity
+Version: 0.0.0.9000
+Author: C. Susannah Tysor
+Maintainer: C. Susannah Tysor <susannah@pobox.com>
+Description: 15 years of lodgepole pine (Pinus contorta var. latifolia) flowering phenology data. The data was collected in seed orchards in British Columbia and represents multiple BC provenances.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 3.5)
+LazyData: true
