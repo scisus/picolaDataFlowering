@@ -6,14 +6,21 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/scisus/picolaDataFlowering/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/scisus/picolaDataFlowering/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14597484.svg)](https://doi.org/10.5281/zenodo.14597484)
 <!-- badges: end -->
 
 The goal of `picolaDataFlowering` is to provide a lodgepole pine
 flowering phenology dataset in an accessible format. This package
 contains 16 years of interior lodgepole pine (*Pinus contorta* ssp.
-*latifolia*) phenology data for pollen shed and cone receptivity. The
-data were collected in seed orchards in British Columbia and represent
-multiple BC provenances.
+*latifolia*) phenology data for pollen shed and cone receptivity.
+
+The data were collected in seed orchards in British Columbia between
+1997 and 2012. Orchard trees are clones and offspring of parents sourced
+from across the province. Seed orchards measured pollen shed, cone
+receptivity, date cones were picked, and the weight of the cones. Not
+all orchards measured all variables in all years. Only pollen shed and
+cone receptivity are surfaced in the package, but date of cone harvest
+and weight are available in the raw data.
 
 ## Installation
 

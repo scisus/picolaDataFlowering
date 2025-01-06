@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/scisus/picolaDataFlowering/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/scisus/picolaDataFlowering/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14597484.svg)](https://doi.org/10.5281/zenodo.14597484)
 <!-- badges: end -->
 
 The goal of `picolaDataFlowering` is to provide a lodgepole pine flowering phenology dataset in an accessible format.
@@ -28,7 +29,7 @@ The data were collected in seed orchards in British Columbia between 1997 and 20
 
 You can install the development version of `picolaDataFlowering` from [GitHub](https://github.com/) with:
 
-```{r, message = FALSE}
+```{r, message = FALSE, results = FALSE}
 # install.packages("devtools")
 devtools::install_github("scisus/picolaDataFlowering")
 ```
